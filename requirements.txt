@@ -1,5 +1,6 @@
 future
-git
+gitpython
+PyGithub
 emoji
 lxml
 beautifulsoup4
