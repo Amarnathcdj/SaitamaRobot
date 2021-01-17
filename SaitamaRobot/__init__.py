@@ -8,7 +8,7 @@ import telegram.ext as tg
 from telethon import TelegramClient
 
 StartTime = time.time()
-CMD_LIST
+CMD_LIST = {}
 # enable logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
