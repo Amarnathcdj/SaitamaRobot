@@ -40,8 +40,7 @@ async def updateme_requirements():
     except Exception as e:
         return repr(e)
 
-
-@register(pattern="^/update(?: |$)(.*)")
+def leave(update: Update, context: CallbackContext):
 async def upstream(ups):
     check = ups.message.sender_id
     if int(check) != int(OWNER_ID):
