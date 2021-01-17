@@ -41,10 +41,6 @@ async def updateme_requirements():
         return repr(e)
 
 def leave(update: Update, context: CallbackContext):
-async def upstream(ups):
-    check = ups.message.sender_id
-    if int(check) != int(OWNER_ID):
-        return
     lol = await ups.reply("`Checking for updates, please wait....`")
     conf = ups.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
