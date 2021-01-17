@@ -2,6 +2,9 @@ from SaitamaRobot.events import register
 from os import remove, execle, path, environ
 import asyncio
 import sys
+from telethon import events
+from os import remove, execle, path, makedirs, getenv, environ, execl
+from shutil import rmtree
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 import heroku3
